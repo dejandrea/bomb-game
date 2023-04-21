@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import {
   Container,
   Icon,
@@ -10,8 +11,10 @@ import {
 import { Alert } from "react-native";
 
 export default function Rules() {
+  const navigation = useNavigation();
+
   function handleNavToStart() {
-    Alert.alert("Ícone clicado");
+    navigation.navigate("Start");
   }
 
   return (
