@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Container, Logo, Title, SubTitle, Rules } from "./styles";
 import ButtonComponent from "../../components/Buttons";
-import { Alert } from "react-native";
 
 export default function Start() {
   const navigation = useNavigation();
@@ -12,7 +11,7 @@ export default function Start() {
 }
 
   function handleNavToPlayTogether() {
-    Alert.alert("Botão clicado 2");
+    navigation.navigate("PlayTogether");
   }
 
   function handleNavToRules() {
