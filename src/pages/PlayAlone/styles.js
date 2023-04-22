@@ -31,13 +31,13 @@ export const TipContainer = styled.View`
 `;
 
 export const TipTitle = styled.Text`
-  font-size: 24px;
+  font-size: ${RFValue(24)}px;
   font-family: ${({ theme }) => theme.fonts.bold};
   color: ${({ theme }) => theme.colors.white};
 `;
 
 export const TipText = styled.Text`
-  font-size: 14px;
+  font-size: ${RFValue(16)}px;
 	font-family: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme }) => theme.colors.textLight};
 `;
