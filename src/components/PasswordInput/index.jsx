@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, InputContainer, Input } from "./styles";
 import { useRef } from "react";
+import { Keyboard } from "react-native";
 
 export default function PasswordInput({ pin, setPin, started }) {
   const input1 = useRef();
@@ -51,7 +52,7 @@ export default function PasswordInput({ pin, setPin, started }) {
             ref={input3}
             value={pin[2]}
             onChangeText={(value) => {
-              // Keyboard.dismiss();
+              Keyboard.dismiss();
               setPin([pin[0],pin[1], value] )
             }}
           />

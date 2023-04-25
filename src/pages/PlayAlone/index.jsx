@@ -33,8 +33,6 @@ export default function PlayAlone() {
     BombService.bombStartGame({ setStarted, hours, minutes, seconds });
   }
 
-  
-
   async function fetchQuestion() {
     const randomNumber = Math.floor(Math.random() * 6 + 1);
 
