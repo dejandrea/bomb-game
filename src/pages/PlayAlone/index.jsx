@@ -112,7 +112,7 @@ export default function PlayAlone() {
         <TipContainer>
           <TipTitle>Sua dica:</TipTitle>
           <TipText>{question}</TipText>
-          <TipText>{answer}</TipText>
+          {/* <TipText>{answer}</TipText> */}
         </TipContainer>
       )}
 
